@@ -22,6 +22,6 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: tar -czf "nova-web-preview-${GITHUB_REF_NAME}.tar.gz" dist README.md docs
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           files: nova-web-preview-*.tar.gz
